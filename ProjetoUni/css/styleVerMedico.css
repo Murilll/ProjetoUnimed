@@ -32,6 +32,7 @@ header {
     align-items: center;
     height: 4rem;
     background-color: rgb(51, 110, 54);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 header h3 {
@@ -134,6 +135,8 @@ footer {
     background-size: cover;
     -o-background-size: cover;
     z-index: -3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
 }
 
 /* FIM-FOOTER */

@@ -16,6 +16,7 @@ header {
     align-items: center;
     height: 4rem;
     background-color: rgb(51, 110, 54);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 header h3 {
@@ -179,6 +180,7 @@ label:after {
     height: 35rem;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
 
 .card img {
@@ -236,6 +238,7 @@ footer {
     background-size: cover;
     -o-background-size: cover;
     z-index: -3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 /* FIM-FOOTER */
