@@ -1,22 +1,47 @@
-* {
+*{
     padding: 0;
     margin: 0;
+}
+body{
+    background-color: rgb(121, 216, 118);
     font-family: 'Montserrat', sans-serif;
 }
-body {
-    background-color: rgb(121, 216, 118);
-}
 
 
-/* HEADER */
-
-header {
+.header{
     display: flex;
     height: 4rem;
     background-color: rgb(51, 110, 54);
+    align-items: center;
 }
 
-/* FIM-HEADER */
+.nome{
+    margin-left: 2vh;
+}
+
+.nome{
+    margin-left: 2vh;
+}
+
+.nome a{
+    text-decoration: none; 
+    color: black; 
+    transition: 0.2s;
+}
+
+.nome a:hover{
+    font-size: 105%;
+    transition: 0.2s;
+}
+
+.imagem{
+    margin-left: 2vh;
+}
+
+
+
+
+
 
 /* MAIN */
 
@@ -29,7 +54,7 @@ header {
 
 .cardSuperior {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .card {
@@ -37,11 +62,16 @@ header {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    width: 80%;
+    width: 30%;
     margin: 5%;
     height: 35rem;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
 }
 
 .card img {
@@ -53,9 +83,9 @@ header {
 }
 
 .card button {
-    background-color: rgb(50, 151, 46);
+    border-color: rgb(58, 187, 53);
+    background-color: transparent;
     border-radius: 5px;
-    border: none;
     margin-left: 20%;
     margin-right: 20%;
     height: 10%;
@@ -63,29 +93,47 @@ header {
     font-size: large;
     margin-top: 8vh;
     color: white;
+    transition: 0.5s;
 }
 
-.card a {
-    text-decoration: none;
-    color: white;
+.card button:hover{
+    background-color: rgb(129, 214, 126);
+    width: 55%;
+    transition: 0.5s;
+    border-radius: 20px;
 }
-
 /* FIM-CARDS */
 
 .text {
-    font-size: 2vw;
     margin-top: 5vh;
 }
 
 /* FIM-MAIN */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* FOOTER */
 
-footer {
+.footer {
     background-color: rgb(51, 110, 54);
     bottom: 0;
     width: 100%;
     height: 4rem; 
+    position: fixed;
 }
 
 /* FIM-FOOTER */
