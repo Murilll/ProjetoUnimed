@@ -20,6 +20,11 @@ header {
 
 /* MAIN */
 
+main{
+    display: flex;
+    justify-content: center;
+}
+
 .quadro{
     display: flex;
     justify-content: center;

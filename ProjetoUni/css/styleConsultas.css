@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
+
 body {
     background-color: rgb(121, 216, 118);
 }
@@ -10,17 +11,49 @@ body {
 
 /* HEADER */
 
+.novoHeader {
+    display: block;
+    width: 100%;
+    height: 1vh;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background: url(../imagem/CoresVerdeERoxo.png) no-repeat bottom center scroll;
+    background-position: 30% 45%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    z-index: -3;
+}
+
 header {
     display: flex;
+    align-items: center;
     height: 4rem;
     background-color: rgb(51, 110, 54);
+}
+
+header h3 {
+    color: white;
+    margin-left: 2vw;
+}
+
+header a {
+    text-decoration: none;
 }
 
 /* FIM-HEADER */
 
 /* MAIN */
 
-.quadro{
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.quadro {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -90,10 +123,21 @@ select {
 /* FOOTER */
 
 footer {
-    background-color: rgb(51, 110, 54);
-    bottom: 0;
+    display: block;
     width: 100%;
-    height: 4rem; 
+    height: 7vh;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background: url(../imagem/CoresVerdeERoxo.png) no-repeat bottom center scroll;
+    background-position: 30% 45%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    z-index: -3;
 }
+
 
 /* FIM-FOOTER */
