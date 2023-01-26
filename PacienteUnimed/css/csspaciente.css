@@ -4,6 +4,7 @@
 }
 body{
     background-color: rgb(121, 216, 118);
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -16,6 +17,21 @@ body{
 
 .nome{
     margin-left: 2vh;
+}
+
+.nome{
+    margin-left: 2vh;
+}
+
+.nome a{
+    text-decoration: none; 
+    color: black; 
+    transition: 0.2s;
+}
+
+.nome a:hover{
+    font-size: 105%;
+    transition: 0.2s;
 }
 
 .imagem{
@@ -38,6 +54,7 @@ body{
 
 .cardSuperior {
     display: flex;
+    justify-content: space-around;
 }
 
 .card {
@@ -52,6 +69,11 @@ body{
     border-radius: 20px;
 }
 
+.card a{
+    text-decoration: none;
+    color: black;
+}
+
 .card img {
     margin-top: 3vh;
     border-radius: 1vw;
@@ -61,9 +83,9 @@ body{
 }
 
 .card button {
-    background-color: rgb(50, 151, 46);
+    border-color: rgb(58, 187, 53);
+    background-color: transparent;
     border-radius: 5px;
-    border: none;
     margin-left: 20%;
     margin-right: 20%;
     height: 10%;
@@ -71,8 +93,15 @@ body{
     font-size: large;
     margin-top: 8vh;
     color: white;
+    transition: 0.5s;
 }
 
+.card button:hover{
+    background-color: rgb(129, 214, 126);
+    width: 55%;
+    transition: 0.5s;
+    border-radius: 20px;
+}
 /* FIM-CARDS */
 
 .text {

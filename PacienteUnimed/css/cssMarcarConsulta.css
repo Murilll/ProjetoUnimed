@@ -4,6 +4,7 @@
 }
 body{
     background-color: rgb(121, 216, 118);
+    font-family: 'Montserrat', sans-serif;
 }
 .header{
     display: flex;
@@ -14,6 +15,17 @@ body{
 
 .nome{
     margin-left: 2vh;
+}
+
+.nome a{
+    text-decoration: none; 
+    color: black; 
+    transition: 0.2s;
+}
+
+.nome a:hover{
+    font-size: 105%;
+    transition: 0.2s;
 }
 
 .imagem{
@@ -47,18 +59,24 @@ body{
 
 
 .tipo_medico{
+    border-radius: 5px;
+    padding-left: 2vh ;
+    width: 20%;
     margin-left: 5%;
     margin-top: 2%;
     height: 10%;
+    display: flex;
+    background-color:rgb(255, 255, 255);
+    align-items: center;
 }
 
 .tipo_medico select{
-    height: 5vh;
+    height: 4.5vh;
     width: 40%;
     font-size: 1.7vh;
-    background-color:rgb(255, 255, 255);
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
+    
 }
 
 
@@ -85,14 +103,14 @@ body{
 
 /* MEDICOS */
 .medicos{
-    width: 50%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin-left: 10%;
 }
 
-.cardMedico{
+#cardMedico{
     background-color: rgb(255, 255, 255);
     height: 20vh;
     margin-top: 2%;
@@ -101,12 +119,33 @@ body{
 
 }
 
+#cardMedico{
+    transition-duration: 500ms;
+    transition-property: margin-right;
+}
+
 .fotoMedico{
     width: 30%;
-    background-color: aqua;
     border-radius: 10px;
 }
 
+.descricaoMedico{
+    margin-left: 5%;
+}
+
+.botaoConsulta{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.botaoConsulta button{
+    border: none;
+    background-color: rgb(23, 236, 87);
+    height: 4vh;
+    width: 20vh;
+    border-radius: 10px;
+}
 
 
 /* FIM-FILTROS */

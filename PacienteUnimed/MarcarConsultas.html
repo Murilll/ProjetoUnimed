@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Paciente | Marcar Consultas</title>
 </head>
 
@@ -19,19 +21,24 @@
         </div>
 
         <div class="nome">
-            Seja bem vindo(a), Fulano da Silva
+            <a href="PaginaInicialPaciente.html" >Seja bem vindo(a), <b>Fulano da Silva</b></a>
         </div>
     </div>
 
 
     <div class="tipo_medico">
+        <span class="material-symbols-outlined">
+            search
+        </span>
+        <h4>&nbsp; Você procura por: &nbsp;</h4>
         <select name="" id="">
-            <option value="">Tipo de medico</option>
             <option value="">Pediatra</option>
             <option value="">Oftalmonologista</option>
             <option value="">Neurologista</option>
         </select>
     </div>
+
+
     <div class="corpo">
 
 
@@ -55,21 +62,34 @@
         </div>
 
         <div class="medicos">
-            <div class="cardMedico">
+            <div id="cardMedico">
                 <div class="fotoMedico">
-                    teste
+                    <img src="imagem/medico1.jpg" style="max-width: 100%; max-height: 100%; border-radius: 10px;">
                 </div>
                 <div class="descricaoMedico">
-                    teste2
+                    <div class="nomeMedico">
+                        <h2>FULANO DE SOUZA</h2>
+                    </div>
+                    <div class="crm">
+                        (CRM 13079)
+                    </div>
+                    <br><br><br>
+                    <h3>Pediatria (RQE: 3762)</h3>
+                    <br>
+                    <input type="text" placeholder="Insira seu EDV">
                 </div>
+                <div class="botaoConsulta">
+                    <button onclick= "aumentarCard()">Marcar Consulta</button>
+                </div>
+                
             </div>
-            <div class="cardMedico">
+            <div id="cardMedico">
                 teste
             </div>
-            <div class="cardMedico">
+            <div id="cardMedico">
                 teste
             </div>
-            <div class="cardMedico">
+            <div id="cardMedico">
                 teste
             </div>
         </div>
@@ -78,6 +98,8 @@
     <div class="footer">
     </div>
 
+
+    <script type="text/javascript" src="js/marcarConsulta.js"></script>
 </body>
 
 </html>
