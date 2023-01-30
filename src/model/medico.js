@@ -38,6 +38,11 @@ const medico = database.define('Medico', {
     Area: {
         type: Sequelize.STRING(100),
         allowNull: false
+    },
+
+    Foto: {
+        type: Sequelize.STRING(50),
+        allowNull: false
     }
 });
 
