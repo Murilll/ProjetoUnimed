@@ -24,6 +24,11 @@ const adm = database.define('ADM', {
         type: Sequelize.INTEGER,
         allowNull: false
         },
+
+    Senha: {
+        type: Sequelize.STRING(100),
+        allowNull: false
+        }
 });
 
 // Exportando essa tabela

@@ -1,8 +1,8 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -25,33 +25,33 @@ body{
     z-index: -3;
 }
 
-.header{
+.header {
     display: flex;
     height: 4rem;
     align-items: center;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-.nome{
+.nome {
     margin-left: 2vh;
 }
 
-.nome{
+.nome {
     margin-left: 2vh;
 }
 
-.nome a{
+.nome a {
     text-decoration: none; 
     color: black; 
     transition: 0.2s;
 }
 
-.nome a:hover{
+.nome a:hover {
     font-size: 105%;
     transition: 0.2s;
 }
 
-.imagem{
+.imagem {
     margin-left: 2vh;
 }
 
@@ -87,7 +87,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.card a{
+.card a {
     text-decoration: none;
     color: black;
 }
@@ -101,7 +101,7 @@ body{
 }
 
 .card button {
-    border-color: rgb(58, 187, 53);
+    border-color: rgb(44, 131, 165);
     background-color: transparent;
     border-radius: 5px;
     margin-left: 20%;
@@ -114,9 +114,9 @@ body{
     transition: 0.5s;
 }
 
-.card button:hover{
-    background-color: rgb(129, 214, 126);
-    width: 55%;
+.card button:hover {
+    background-color: rgb(147, 180, 201);
+    width: 45%;
     transition: 0.5s;
     border-radius: 20px;
 }
@@ -130,7 +130,8 @@ body{
 
 /* FOOTER */
 
-footer{
+footer {
+    align-items: center;
     margin-top: 10vh;
     color: rgb(92, 89, 89);
     bottom: 0;
@@ -139,7 +140,13 @@ footer{
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-#footerBosch{
+footer .text{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#footerBosch {
     display: block;
     width: 100%;
     height: 1vh;

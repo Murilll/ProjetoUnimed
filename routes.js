@@ -17,7 +17,6 @@ route.get('/Login/:id', home.pagLogin);
 route.post('/Verificar/:id', home.VerificarLogin);
 
 
-
 route.get('/Cadastrar', cadastro.paciente);
 route.post('/Cadastrar', cadastro.pacienteInsert);
 
@@ -26,7 +25,6 @@ route.post('/CadastrarMedico', multer(config).single('Foto'), cadastro.medicoIns
 
 route.get('/CadastrarADM', cadastro.adm);
 route.post('/CadastrarADM', cadastro.admInsert);
-
 
 
 module.exports = route;
