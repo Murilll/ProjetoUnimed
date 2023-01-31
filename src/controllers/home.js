@@ -2,13 +2,13 @@ const paciente = require("../model/paciente");
 const medico = require("../model/medico");
 const ambulatorio = require("../model/adm");
 const consulta = require("../model/consulta");
+const { response } = require("express");
 
 
 module.exports = {
     async pagInicialGet(req, res) {
         res.render('../views/Login');
     },
-
 
     async pagLogin(req, res) {
         const id = req.params.id;
@@ -18,25 +18,27 @@ module.exports = {
     async VerificarLogin(req, res) {
         const dados = req.body
         const id = req.params.id;
-        const acessoAutorizado = false;
 
 
         if (dados.documento && dados.senha) {
             if (id == '1') {
                 const pacientes = await paciente.findAll({
                     raw: true,
-                    attribrutes: ["EDV", "Senha", "Nome"]
+                    attribrutes: ["CPF_Paciente", "Senha", "Nome"]
                 })
 
                 pacientes.forEach(ele => {
 
                     if (dados.documento == ele.EDV && dados.senha == ele.Senha) {
                         const nome = ele.Nome;
-                        res.render('../views/PaginaInicialPaciente', {nome});
+                        const edv = ele.CPF_Paciente;
+
+                        res.cookie('UserName', nome)
+                        res.cookie('UserEdv', edv)
+
+                        res.render('../views/PaginaInicialPaciente', {nome, edv});
                     }
-
                 });
-
             }
             else if (id == '2') {
                 const medicos = await medico.findAll({
