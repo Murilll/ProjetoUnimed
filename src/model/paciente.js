@@ -3,13 +3,6 @@ const database = require('../config/db');
 
 // Criando a tabela Sala
 const paciente = database.define('Paciente', {
-    IDPaciente: {
-    type: Sequelize.INTEGER,
-    autoIncrement: true,
-    allowNull: false,
-    primaryKey: true
-    },
-
     Nome: {
     type: Sequelize.STRING(50),
     allowNull: false
@@ -17,7 +10,8 @@ const paciente = database.define('Paciente', {
 
     CPF_Paciente: {
     type: Sequelize.STRING(14),
-    allowNull: false
+    allowNull: false,
+    primaryKey: true
     },
 
     Idade: {

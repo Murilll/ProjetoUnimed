@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/cssMarcarConsulta.css" rel="stylesheet">
+    <link href="../css/cssMarcarConsulta.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
@@ -16,9 +16,6 @@
 
 <body>
     <div class="header">
-        <div class="imagem">
-            <img src="imagem/user.png">
-        </div>
 
         <div class="nome">
             <a href="PaginaInicialPaciente.html" >Seja bem vindo(a), <b>Fulano da Silva</b></a>
@@ -41,57 +38,38 @@
 
     <div class="corpo">
 
-
-        <div class="filtros">
-            <div class="dia_horas">
-                <h2>FILTRE SUA CONSULTA</h2>
-                <select name="" id="">
-                    <option>Dia: </option>
-                    <option>22/03</option>
-                    <option>21/05</option>
-                    <option>13/08</option>
-                </select>
-
-                <select name="" id="">
-                    <option>Horarios: </option>
-                    <option>13:30</option>
-                    <option>10:20</option>
-                    <option>09:10</option>
-                </select>
-            </div>
-        </div>
-
         <div class="medicos">
+            <%for (let i = 0; i < medicos.length;i++) { %>
+            
             <div id="cardMedico">
                 <div class="fotoMedico">
-                    <img src="imagem/medico1.jpg" style="max-width: 100%; max-height: 100%; border-radius: 10px;">
+                    <img src="../imagem/medico1.jpg" style="max-width: 100%; max-height: 100%; border-radius: 10px;">
                 </div>
+
+
                 <div class="descricaoMedico">
                     <div class="nomeMedico">
-                        <h2>FULANO DE SOUZA</h2>
+                        <h2><%= medicos[i].Nome %></h2>
                     </div>
                     <div class="crm">
-                        (CRM 13079)
+                        (CRM <%= medicos[i].CRM %>)
                     </div>
                     <br><br><br>
-                    <h3>Pediatria (RQE: 3762)</h3>
-                    <br>
-                    <input type="text" placeholder="Insira seu EDV">
+                    <h3><%= medicos[i].Area %> (RQE: 3762)</h3>
                 </div>
-                <div class="botaoConsulta">
-                    <button onclick= "aumentarCard()">Marcar Consulta</button>
-                </div>
-                
-            </div>
-            <div id="cardMedico">
-                teste
-            </div>
-            <div id="cardMedico">
-                teste
-            </div>
-            <div id="cardMedico">
-                teste
-            </div>
+
+
+                <form method="post" action="/MarcarConsulta">
+                    <div class="botaoConsulta">
+                        <input type="date" name="Data">
+                        <input type="time" name="Time">
+                        <input id="dadoInvisivel" type="text" name="CPF_Paciente" value="<%= edv %>" >
+                        <input id="dadoInvisivel" type="text" name="CPF_Medico" value="<%= medicos[i].CPF_Medico%>" >
+                        <button>Marcar Consulta</button>
+                    </div>
+                </form>
+
+            </div><% } %>
         </div>
     </div>
 

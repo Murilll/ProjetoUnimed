@@ -10,10 +10,10 @@ body {
 
 /* HEADER */
 
-.headerBosch {
+.novoHeader {
     display: block;
     width: 100%;
-    height: 70vh;
+    height: 1vh;
     padding: 0;
     text-align: center;
     color: white;

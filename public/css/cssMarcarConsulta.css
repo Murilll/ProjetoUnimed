@@ -39,6 +39,7 @@ body{
 
 /* MAIN */
 .corpo{
+    justify-content: center;
     margin-top: 2%;
     display: flex;
 }
@@ -47,14 +48,6 @@ body{
 
 
 /* FILTROS */
-.filtros{
-    padding-left: 1vh;
-    height: 35vh;
-    background-color: rgb(255, 255, 255);
-    width: 15%;
-    margin-left: 5%;
-    border-radius: 10px;
-}
 
 
 
@@ -78,25 +71,6 @@ body{
     border-radius: 5px;
     
 }
-
-
-
-.dia_horas{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 80%;
-}
-
-.dia_horas select{
-    height: 30%;
-    width: 80%;
-    font-size: 1.7vh;
-    background-color: transparent;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
 /* FIM FILTROS */
 
 
@@ -107,7 +81,6 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin-left: 10%;
 }
 
 #cardMedico{
@@ -117,6 +90,13 @@ body{
     border-radius: 10px;
     display: flex;
 
+}
+
+#cardMedico form{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-left: 10%;
 }
 
 #cardMedico{
@@ -131,12 +111,19 @@ body{
 
 .descricaoMedico{
     margin-left: 5%;
+    width: 25%;
 }
 
 .botaoConsulta{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     margin-left: 10%;
+    align-items: center;
+}
+
+#dadoInvisivel{
+    display: none;
 }
 
 .botaoConsulta button{
@@ -145,6 +132,24 @@ body{
     height: 4vh;
     width: 20vh;
     border-radius: 10px;
+    margin-top: 10%;
+}
+
+.botaoConsulta select{
+    background-color: transparent;
+    height: 4vh;
+    width: 21.2vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.botaoConsulta input{
+    background-color: transparent;
+    height: 4vh;
+    width: 21vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-width: 1px;
 }
 
 
